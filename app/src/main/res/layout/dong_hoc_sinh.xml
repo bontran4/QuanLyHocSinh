@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageHinhAnh"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/edit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTenHS"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:text="Tên học sinh"
+        android:textColor="#0048FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageHinhAnh"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLop"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="5dp"
+        android:text="Lớp"
+        android:textColor="#0048FF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageHinhAnh"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTenHS" />
+
+    <ImageView
+        android:id="@+id/imageDelete"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/delete"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewLop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewLop"
+        app:layout_constraintTop_toBottomOf="@+id/imageEdit"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageEdit"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTenHS"
+        app:layout_constraintTop_toTopOf="@+id/textViewTenHS" />
+</androidx.constraintlayout.widget.ConstraintLayout>
